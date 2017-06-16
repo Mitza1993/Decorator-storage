@@ -11,4 +11,18 @@ angular.module('myApp.admin-view', ['ngRoute'])
 
     .controller('AdminViewCtrl', ['$scope',function($scope) {
 
+        $scope.usersData = [
+            {
+            email: 'iordache.mihaialexandru@gmail.com',
+            storageName: 'mihaiiordache',
+            name: 'Mihai Iordache',
+            description: 'MTZ'
+            },
+            {
+            email: 'iordache.gheorghe17@gmail.com',
+            storageName: 'iordache2',
+            name: 'Gheorghe Iordache',
+            description: 'SC.ARCH.SRL'
+            }
+        ]
     }]);
