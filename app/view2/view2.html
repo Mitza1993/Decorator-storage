@@ -1,5 +1,13 @@
-<p>This is the partial for view 2.</p>
-<p>
-  Showing of 'interpolate' filter:
-  {{ 'Current version is v%VERSION%.' | interpolate }}
-</p>
+<md-content class="md-padding" layout="column">
+  <h2 class="md-title">Use a custom chip template.</h2>
+
+  <form name="fruitForm">
+    <md-chips ng-model="ctrl.roFruitNames" name="fruitName" readonly="ctrl.readonly"
+              md-removable="ctrl.removable" md-max-chips="5" placeholder="Enter a fruit...">
+      <md-chip-template>
+        <strong>{{$chip}}</strong>
+        <em>(fruit)</em>
+      </md-chip-template>
+    </md-chips>
+  </form>
+</md-content>
