@@ -9,6 +9,20 @@ angular.module('myApp.view2', ['ngRoute'])
   });
 }])
 
-.controller('View2Ctrl', [function() {
-
+.controller('View2Ctrl', ['$scope', function($scope) {
+    $scope.usersData = [
+        {
+          'email': 'iordache.mihaialexandru@gmail.com',
+          'storageName': 'mihaiiordache',
+          'name': 'Mihai Iordache',
+          'description': 'MTZ'
+        },
+        {
+        'email': 'iordache.gheorghe17@gmail.com',
+        'storageName': 'iordache2',
+        'name': 'Gheorghe Iordache',
+        'description': 'SC.ARCH.SRL'
+        }
+    ];
+    $scope.user = $scope.usersData[0];
 }]);
