@@ -10,6 +10,6 @@
 
     ContainerController.$inject = ['$location', '$rootScope', '$scope','$http','$firebaseObject','$firebaseArray'];
     function ContainerController( $location, $rootScope, $scope, $http, $firebaseObject, $firebaseArray) {
-            console.log($scope);
+        console.log("Container Controller")
     }
 })();

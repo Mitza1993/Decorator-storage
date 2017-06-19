@@ -8,8 +8,10 @@
         <p ng-show="authData" class="navbar-text">{{vm.cachedProfile.name}} - {{vm.cachedProfile.email}}</p>
 
         <ul class="nav navbar-nav navbar-right">
-            <li ng-click="login('google')" ng-hide="authData"><a href>Login With Google</a></li>
-            <li ng-click="logout()" ng-show="authData"><a href>Logout</a></li>
+            <li ng-click="vm.login('google')" ng-hide="vm.authData"><a href>Login With Google</a></li>
+            <li ng-click="vm.signOut()" ng-show="vm.authData"><a href>Logout</a></li>
         </ul>
     </div>
 </nav>
+<div ng-include="vm.currentTab.template">
+</div>

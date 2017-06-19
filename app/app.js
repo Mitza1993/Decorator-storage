@@ -10,8 +10,9 @@
     function config($routeProvider, $locationProvider,$httpProvider) {
         $routeProvider
             .when('/', {
-                controller: 'LoginController',
-                templateUrl: 'login/login.view.html'
+                controller: 'MainController',
+                templateUrl: 'main/MAIN.view.html',
+                controllerAs: 'vm'
             })
 
             .when('/users', {
